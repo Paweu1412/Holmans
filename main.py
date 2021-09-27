@@ -42,6 +42,11 @@ async def on_member_join(member):
             if search_role:
                 await channel_by_id.send(search_role.mention + " attention, attention!" + member.mention, embed=embed)
 
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.AttributeError):
+        
+
 
 @bot.command()
 @commands.has_role("Niezarejestrowany")
@@ -85,6 +90,7 @@ async def rejestruj(ctx, arg1="not typed", arg2="not_typed", arg3="not_typed"):
 async def on_command_error(ctx, error):
     print(error)
     await ctx.send("Błąd")
+    return
 
 
 @bot.event
