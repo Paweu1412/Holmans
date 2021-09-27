@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     activity = discord.Activity(type=discord.ActivityType.custom, state="Byłem tu, tam i tam")
-    await bot.Acitvity(activity=activity)
+    await bot.Activity(activity=activity)
 
 @bot.command()
 async def mem(ctx):
