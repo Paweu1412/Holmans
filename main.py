@@ -104,4 +104,4 @@ async def purge(ctx, amount=30):
     await channel.delete_messages(messages)
 
 
-bot.run("ODkxNzY1MjQzNjAzMjAyMTE4.YVDHGg.4iZJGU5xb5fi_Fwm3SZcSfnshHI")
+bot.run("ODkxNzY1MjQzNjAzMjAyMTE4.YVDHGg.QobCDR0ltw4_reO8VsIPDh5jlAM")
