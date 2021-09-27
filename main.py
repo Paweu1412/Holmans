@@ -40,7 +40,7 @@ async def on_member_join(member):
         if channel_by_id:
             search_role = get(member.guild.roles, name="Holman")
             if search_role:
-                await channel_by_id.send(search_role.mention + " attention, attention!", embed=embed)
+                await channel_by_id.send(search_role.mention + " attention, attention!" + member.mention, embed=embed)
 
 
 @bot.command()
