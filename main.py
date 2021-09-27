@@ -41,12 +41,7 @@ async def on_member_join(member):
             search_role = get(member.guild.roles, name="Holman")
             if search_role:
                 await channel_by_id.send(search_role.mention + " attention, attention!" + member.mention, embed=embed)
-
-@bot.event
-async def on_command_error(ctx, error):
-    if isinstance(error, commands.AttributeError):
-        
-
+    
 
 @bot.command()
 @commands.has_role("Niezarejestrowany")
